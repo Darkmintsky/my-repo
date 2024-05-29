@@ -2,8 +2,6 @@ name: Workflow error
 on: push
 jobs:
   run:
-    hello:
-      run-on: ubuntu-latest
-      steps:
-        - run: date
-        - uses: actions/checkout@v4
+    run-on: ubuntu-latest
+    steps:
+      - run: date
